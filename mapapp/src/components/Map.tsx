@@ -1,3 +1,9 @@
-export default function Map (){
-    return <div>Map</div>
+import type { Place } from "../api/Place";
+
+interface MapProps {
+  palce: Place | null;
+}
+
+export default function Map({ place }: MapProps) {
+  return <div>Map</div>;
 }
